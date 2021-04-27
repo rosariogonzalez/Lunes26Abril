@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
         <title>ICVU: Indice calidad vida urbana</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&display=swap" rel="stylesheet" />
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
         <style>
             :root {
-                --bs-font-sans-serif: "DM Sans", sans-serif;
+                --bs-font-sans-serif: "PT Serif", sans-serif;
             }
             :hover {
                 transition: all ease 0.5s;
@@ -50,40 +51,67 @@
 
             /*ICVU 2020 NIVEL ALTO*/
 
-            g#mapa path#la_reina:hover,
-            g#mapa path#las_condes:hover,
-            g#mapa path#lo_barnechea:hover,
-            g#mapa path#macul:hover,
-            g#mapa path#nunoa:hover,
-            g#mapa path#providencia:hover,
-            g#mapa path#quilicura:hover,
             g#mapa path#san_miguel:hover,
-            g#mapa path#santiago:hover,
-            g#mapa path#vitacura:hover {
-                fill: RGBA(91, 155, 192, 0.5);
+            g#mapa path#macul:hover,
+            g#mapa path#providencia:hover,
+            g#mapa path#las_condes:hover,
+            g#mapa path#vitacura:hover,
+            g#mapa path#lo_barnechea:hover,
+            g#mapa path#la_reina:hover,
+            g#mapa path#nunoa:hover,
+            g#mapa path#quilicura:hover,
+            g#mapa path#santiago:hover {
+                fill: RGBA(39, 216, 128, 0.5);
             }
 
             /*ICVU 2020 NIVEL MEDIO ALTO*/
 
-            g#mapa path#colina:hover,
-            g#mapa path#estacion_central:hover,
-            g#mapa path#huechuraba:hover,
-            g#mapa path#la_cisterna:hover,
-            g#mapa path#la_florida:hover,
-            g#mapa path#maipu:hover,
             g#mapa path#penalolen:hover,
-            g#mapa path#san_joaquin:hover {
-                fill: rgba(253, 141, 60, 0.5);
+            g#mapa path#estacion_central:hover,
+            g#mapa path#la_cisterna:hover,
+            g#mapa path#san_joaquin:hover,
+            g#mapa path#la_florida:hover,
+            g#mapa path#huechuraba:hover,
+            g#mapa path#maipu:hover,
+            g#mapa path#colina:hover {
+                fill: rgba(222, 205, 18, 0.5);
             }
 
             /*ICVU 2020 NIVEL MEDIO BAJO*/
 
-            g#mapa path#buin:hover,
-            g#mapa path#cerrillos:hover,
+            g#mapa path#lampa:hover,
+            g#mapa path#pudahuel:hover,
             g#mapa path#penaflor:hover,
-            g#mapa path#pudahuel:hover {
-                fill: rgba(227, 26, 28, 0.5);
+            g#mapa path#independencia:hover {
+                fill: rgba(222, 64, 108, 0.5);
             }
+
+            /*ICVU 2020 BAJO*/
+
+            g#mapa path#san_bernardo:hover,
+            g#mapa path#pedro_aguirre_cerda:hover,
+            g#mapa path#conchali:hover,
+            g#mapa path#la_granja:hover,
+            g#mapa path#buin:hover,
+            g#mapa path#padre_hurtado:hover,
+            g#mapa path#el_bosque:hover,
+            g#mapa path#melipilla:hover,
+            g#mapa path#cerro_navia:hover,
+            g#mapa path#san_ramon:hover,
+            g#mapa path#la_pintana:hover,
+            g#mapa path#lo_prado:hover,
+            g#mapa path#lo_espejo:hover,
+            g#mapa path#puente_alto:hover,
+            g#mapa path#recoleta:hover,
+            g#mapa path#paine:hover,
+            g#mapa path#cerrillos:hover,
+            g#mapa path#talagante:hover,
+            g#mapa path#renca:hover,
+            g#mapa path#quinta_normal:hover {
+                fill: rgba(222, 177, 255, 0.5);
+            }
+
+
 
             #fondo-cuadros-vineta {
                 fill: rgba(255, 255, 255, 0.75);
@@ -113,7 +141,7 @@
                         "El ICVU es un índice sintético que mide y compara en términos relativos la calidad de vida urbana de comunas y ciudades en Chile, a partir de un conjunto de variables referidas a seis dimensiones que expresan el estado de situaciob en la provisón de bienes y servicios públicos y privados a la población residente y sus correspondientes impactos socio-territoriales,tanto a escala de ciudades intermedias como de escala metropolitana"
                     </p>
                     <p>
-                        Las ponderaciones de las dimensiones que contempla el ICVU son: Vivienda y entorno, Salud y Medio Ambiente, Condiciones Socio Culturales, Ambiente de Negocios, Condición Laboral.
+                        Las ponderaciones de las dimensiones que contempla el ICVU son: Vivienda y Entorno, Salud y Medio Ambiente, Condiciones Socio Culturales, Ambiente de Negocios, Condición Laboral.
                     </p>
                 </div>
                 <div class="col-11 col-md-10 mx-auto py-3">
@@ -316,7 +344,7 @@
     c4.1,1.2,8.2,2.4,12.3,3.6c0.5,0.1,1.6,0.3,1.7,0.6c0.3,0.5-0.6,2.5-0.7,3.1C208.4,261.2,206.6,269,204.8,276.8z"
                             />
                             <path
-                                id="los_espejo"
+                                id="lo_espejo"
                                 d="M168,255.9c-0.1,1.9-0.7,4.7-0.2,6.5c0.2,0.8-0.1,0.4,0.3,0.9c0.4,0.5,1.6,0.7,2.2,1
     c4,1.8,8,3.6,12,5.4c3-7.9,6.1-15.8,9.1-23.6c0.4-1.1,0.6-1,0.1-1.6c-1-1.1-4-1.8-5.4-2.4c-3.8-1.6-7.5-3.3-11.3-4.9
     C172.6,243.4,170.3,249.6,168,255.9z"
@@ -409,39 +437,8 @@
     c-0.2,0.3-1.3,0.2-1.6,0.6c-0.7,0.7-0.2,1.1,0,2c0.3,1.8-0.4,4.8-2.5,5.4c-1.7,0.5-3.9-2-3.6,1.2c0.2,1.9,0.2,3.3-1.1,5
     c-1,1.3-3.5,1.7-4.3,0.1c-0.5-0.9,0-3.6-2-2.4c-1,0.6-0.4,0.8-0.3,1.8C299,332.9,298.4,333.7,297.8,334.9z"
                             />
-                            <path
-                                id="pirque"
-                                d="M256.4,358.3c0.2-2.1-2.7,1.2-3.2,1.5c-2.4,1.8-5.9,1.4-8.6,2.8c-1.5,0.8-2,2.2-3.3,3.2
-    c-0.9,0.7-2,0.8-3,1.2c-1.6,0.6-2.8,0.8-4.5,0.6c-1.8-0.2-2.6-0.4-4.2,0.6c-1.4,0.8-5.3,1.9-5.4-0.9c0-1.6,3.2-2.9,2.6-4.4
-    c-0.3-0.8-2.7-0.5-3.3-0.6c-1.2-0.2-2.3-0.9-3.1-1.8c-2.2-2.6-3.8-5.8-0.7-6.6c2.9-0.7,8.1,1.1,10.8,1.2c1.8,0.1,3.4-0.8,5-0.9
-    c1.5-0.1,2.5-0.5,3.9-1s2.6-0.2,3.9-0.6c0.7-0.2,1.6-1.1,2.4-0.9c1.2,0.3,0.6,1.9,2.4,1.5c1.1-0.2,1.7-1.3,2.3-2.2
-    c1-1.5,1.7-2.7,3.7-2.3c1.1,0.2,1.4,0.8,2.3,0c1.9-1.6,0.9-5.1,3.2-6.6c1.1-0.7,2.3-0.6,3.5-0.7c0.4,0,1.6,0.1,1.9-0.1
-    c0.2-0.2,0.3-1.9,0.6-2.3c2.1-3.9,4.3-0.3,7.4-1.1c1.9-0.5,2.9-2.2,4.5-3c1.6-0.7,3.7,0,5.2,0.5c1.9,0.6,3,1.6,4.6,0.1
-    c0.8-0.8,1.4-1.9,2.4-2.5c2.4-1.5,6.7,3.8,8.5,1.2c0.3,0.5,0.5,1.1,0.8,1.6c-3.5,0.1-6.1,0.5-9.4,1.8c-1.8,0.7-1.2,1.2-1.2,3.2
-    s0.5,2.1,2,3.4c-2,0.4-4,0.6-5.9,1.2c-1.5,0.5-2.2,1.5-3.4,2.7c0-1,0-1.9,0-2.9c-2.4,0.4-4.7,0.8-7.1,1.2c0.2-0.9,0.4-1.8,0.6-2.7
-    c-1.5,0.8-3.7,1.4-5,2.5c-0.7,0.6-0.4,0.1-0.7,0.8c-0.3,0.7,0.1,2.1,0.2,2.9c0.1,1.4,0.6,3.1-0.2,4c-1,1.1-3.7,1.6-5.1,2.3
-    c-0.1-1.5-0.3-3.1-0.4-4.6c-1.4,0.7-2.9,1.3-4.3,2c0.7,1,1.4,1.9,2.2,2.9C259.5,357,258,357.6,256.4,358.3z M310.8,325.1
-    c-1,0.6-1.4,0.7-2.6,0.4c-0.4-0.1-0.9-0.7-1.4-0.6c-1.4,0.4-0.2,2.7-0.2,3.6c1.3-1.3,2.1-0.8,3.7-1.2
-    C311.9,326.9,311.7,326.1,310.8,325.1z M312.1,322.1c-0.1,0.1-0.2,0.2-0.1,0.3c0.7,0,2-1.8,2.6-2.2c1.3-1,2.7-1.8,3.8-2.9
-    c1.3-1.2,2.1-2.6,4-2.4c1.4,0.2,2.3,1.5,3.6,0.2c0.7-0.6,0.9-3.9,1.5-4s1.4,2.5,3,2.2c0.8-0.1,1.1-0.8,1.8-1.1
-    c0.9-0.4,2-0.2,2.9-0.1c1.7,0.1,4.2,0.4,4.2-2.1c-0.1-2-2.7-2.2-4.3-1.8c-1.9,0.5-2.5,2.4-4.6,1.6c-1.5-0.6-3-2.5-4.8-2
-    c-2.3,0.7-0.4,3.6-1.9,4.5c-0.8,0.5-0.9-0.2-1.6-0.5c-1.4-0.6-1.5-0.4-2.6,0.6c-1.5,1.4-2.7,2.7-4.3,3.8c-0.3,0.1-0.6,0.2-0.9,0.4
-    c-0.3,0.3-0.4,0.6-0.4,1.1c-0.3,0.2-0.9-0.1-1.2,0.2c-0.7,0.7-0.6,0.4-0.8,1.3C311.9,320.4,312.4,321.2,312.1,322.1z M350.2,301.4
-    c-1-1.3-2.2-3.4-4-3.4c-2.4,0.1-1.9,2.7-3.3,4c-2,2-3-1-4.9-0.5c-1.2,0.3-0.2,1.3-0.3,2.6c1-0.8,1.9,0.2,2.8,0.5
-    c1.1,0.5,2.1,0.6,3.3,0c1.1-0.6,1.8-2.3,3-2.7c0.2-0.1,1,0.2,1.3,0.1C348.8,302,349.3,301.4,350.2,301.4z"
-                            />
-                            <path
-                                id="san_jose_de_maipo"
-                                d="M337.4,304.2c0.1-1.3-1-2.3,0.3-2.6c1.9-0.5,3,2.5,5,0.5c1.3-1.4,0.9-3.9,3.2-4
-    c2.2-0.1,2.6,2.3,4,3.4c1,0.8,2.2,0.7,3.3,0.5c1.2-0.3,2.3-0.4,3.6-0.6c2.1-0.4,3.7-1.5,6-1.1c1.2,0.2,2.2,1.7,2.7,0.3
-    c0.4-1.2-0.7-2.1-1.7-2.3c-1.1-0.2-1.9,0.4-2.9,0.7c-1.3,0.3-1.3,0-2.5-0.5c-0.7-0.2-1.9-0.4-2.4-0.7c-0.5-0.3-0.7-0.8-1.1-1.1
-    c-1.6-1-0.5,0-2.2,0.5c-1.5,0.5-2.6-1.1-3.1-2.3c-0.3-0.9-0.1-3-1.3-3.3c-0.7-0.2-1.5,1.7-1.6,2.3c-0.1,0.4,0.4,1.7,0.2,1.9
-    c-0.7,0.9-2.3,0.3-3.2,0.4c-1.7,0.2-3.5,1.1-4-1.4c-1.3,0.5-1.3,2.4-2.7,2.9c1.5,1.7-0.1,2.7-0.9,4.1c-0.7,1.1-0.3,2.7-1.9,2.2
-    c-0.8-0.2-0.3-1.4-1.2-0.5c-0.5,0.5-0.1,1.4-0.5,2c-1.1,1.4-2.9,0.6-2.9-1c-0.4,0.6-1,1.9-1.8,2.1c-1.2,0.3-1-1.1-1.8-1.4
-    c-1.1-0.4-2.1,1.2-3.3,1c-0.9-0.2-1.2-1.1-2.4-0.6c-0.9,0.4-1.4,1.4-1.7,2.3c-0.2,0.6-1.3,5.9-0.7,6.1c0.9,0.3,1.9-2.7,3.4-2.4
-    c1.2,0.2,1.5,1.8,2.5,0.4c0.9-1.3-0.4-3.3,1.5-4c1.4-0.5,2.8,0.7,3.9,1.3c1.4,0.8,2.2,1.3,3.6,0.3c1.7-1.1,2.2-1.4,4.3-1.2
-    C341,308.6,335.9,305.7,337.4,304.2z"
-                            />
+                            
+                            
                             <path
                                 id="la_florida"
                                 d="M232.2,242.1c1.4,1.4,1.2,1.6,1.3,3.5c0,0.5,0,1,0.1,1.6c0.1,3.2,0.2,6.4,0.3,9.6
@@ -534,16 +531,16 @@
                         <g id="vineta">
                             <rect x="5" y="5" fill="rgba(255,255,255,0.9)" width="90" height="65" />
                             <!--primer dato-->
-                            <rect x="10" y="10" fill="rgba(91, 155, 192, 1)" width="10" height="10" />
+                            <rect x="10" y="10" fill="rgba(39, 216, 128, 1)" width="10" height="10" />
                             <text x="25" y="17">Alto</text>
                             <!--segundo dato-->
-                            <rect x="10" y="25" fill="rgba(254,204,92,1)" width="10" height="10" />
-                            <text x="25" y="32">Medio alto</text>
+                            <rect x="10" y="25" fill="rgba(222, 205, 18,1)" width="10" height="10" />
+                            <text x="25" y="32">Medio Alto</text>
                             <!--tercer dato-->
-                            <rect x="10" y="40" fill="rgba(253,141,60,1)" width="10" height="10" />
-                            <text x="25" y="47">Medio bajo</text>
+                            <rect x="10" y="40" fill="rgba(222, 64, 108,1)" width="10" height="10" />
+                            <text x="25" y="47">Medio Bajo</text>
                             <!--cuarto dato-->
-                            <rect x="10" y="55" fill="rgba(227,26,28,1)" width="10" height="10" />
+                            <rect x="10" y="55" fill="rgba(222, 177, 255,1)" width="10" height="10" />
                             <text x="25" y="62">Bajo</text>
                         </g>
                     </svg>
